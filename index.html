@@ -3,43 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self'; 
-      script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://esm.sh https://static.cloudflareinsights.com; 
-      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
-      font-src 'self' https://fonts.gstatic.com; 
-      img-src 'self' data:;
-      connect-src 'self' https://esm.sh https://api.web3forms.com;
-    ">
     <title>CSR GENxt Convent School</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            },
-            colors: {
-              school: {
-                blue: '#1e3a8a',
-                gold: '#FFC72C',
-                light: '#f3f4f6',
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      body { font-family: 'Inter', sans-serif; }
-      h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
-      .group:hover .group-hover\:block { display: block; }
-    </style>
   </head>
-  <body class="bg-gray-50 text-gray-800 antialiased">
+  <body>
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
   </body>
