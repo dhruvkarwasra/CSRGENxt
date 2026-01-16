@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 import { NavItem } from '../types';
+// Import the logo file
+import schoolLogo from '../logos/logo.svg';
 
 const NAV_ITEMS: NavItem[] = [
   { label: 'Home', path: '/' },
@@ -22,9 +24,13 @@ export const Layout: React.FC = () => {
         {/* Top Bar: Logo Area */}
         <div className="container mx-auto px-6 py-6 flex flex-col items-center justify-center border-b border-gray-100">
           <div className="flex flex-col items-center text-center">
-             {/* School Logo Placeholder */}
-            <div className="h-20 w-20 bg-school-blue rounded-full flex items-center justify-center mb-3 shadow-lg text-school-gold">
-               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10v6"/><path d="M20 10a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-6Z"/><path d="M6 10a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-6Z"/><path d="M12 2a2 2 0 0 1 2 2v2H2V4a2 2 0 0 1 2-2h8Z"/><path d="M10 22h4"/></svg>
+            {/* School Logo - Updated to use logo.png */}
+            <div className="mb-3">
+              <img 
+                src={schoolLogo} 
+                alt="CSR GENxt Logo" 
+                className="h-24 w-auto drop-shadow-md" 
+              />
             </div>
             <h1 className="text-3xl md:text-4xl font-serif font-bold text-school-blue tracking-wide">CSR GENxt Convent School</h1>
             <p className="text-gray-500 text-sm mt-1 uppercase tracking-widest font-semibold">Explore • Evolve • Excel</p>
@@ -97,7 +103,6 @@ const Footer: React.FC = () => {
             CISCE Curriculum Institution.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
-            {/* Social icons */}
             <a href="#" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-school-gold hover:text-school-blue cursor-pointer transition text-white">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" /></svg>
             </a>
@@ -147,8 +152,10 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="border-t border-gray-800 mt-8 pt-8 text-center text-xs text-gray-500">
-        &copy; {new Date().getFullYear()} CSR GENxt Convent School. All rights reserved.
+        © {new Date().getFullYear()} CSR GENxt Convent School. All rights reserved.
       </div>
     </footer>
   );
 };
+
+export default Layout;
