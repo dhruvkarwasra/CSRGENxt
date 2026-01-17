@@ -27,7 +27,7 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-800">Address</h4>
-                  <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-school-blue hover:underline">
+                  <a href="https://www.google.com/maps/search/?api=1&query=30.29393050892571,74.10062459036274" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-school-blue hover:underline">
                     CSR GENxt Convent School,<br/>Khui Khera, Abohar-Fazilka Highway,<br/>Fazilka - 152121
                   </a>
                 </div>

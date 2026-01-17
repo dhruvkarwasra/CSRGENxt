@@ -27,7 +27,7 @@ export const About: React.FC = () => {
                     CSR GENxt Convent School is set to open its doors for the first academic session in 2026. Located on the Abohar-Fazilka Highway, our sprawling campus is designed to foster a learning environment that is both modern and deeply rooted in Indian values.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                    We are proud to be a ICSE curriculum following institution, ensuring that our curriculum adheres to the highest standards of education in India.
+                    We are proud to be an ICSE curriculum following institution, ensuring that our curriculum adheres to the highest standards of education in India.
                 </p>
                 <p className="text-gray-700 leading-relaxed">
                    Our focus is not just on academic excellence, but on creating 'GENxt' leaders who are compassionate, innovative, and ethically grounded.
