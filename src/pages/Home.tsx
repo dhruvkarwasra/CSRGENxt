@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 const highlights = [
   {
-    title: "CISCE Curriculum",
-    description: "Following the Council for the Indian School Certificate Examinations standards for holistic development.",
+    title: "ICSE Curriculum",
+    description: "Following the Indian Certificate of Secondary Examinations standards for holistic development.",
     icon: (
       <svg className="w-8 h-8 text-school-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
     )
@@ -47,7 +47,7 @@ export const Home: React.FC = () => {
             Welcome to <span className="text-school-gold">CSR GENxt Convent School</span>
           </h2>
           <p className="text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto opacity-90">
-            A CISCE Certified Institution nurturing the leaders of tomorrow with Indian values and global vision.
+            A Premier Institution nurturing the leaders of tomorrow with Indian values and global vision.
           </p>
           <div className="flex justify-center space-x-4">
             <NavLink to="/contact" className="bg-school-gold text-school-blue px-8 py-3 rounded-full font-bold hover:bg-yellow-400 transition transform hover:scale-105 shadow-lg">
@@ -90,8 +90,8 @@ export const Home: React.FC = () => {
             <div className="text-sm uppercase tracking-widest opacity-80">First Academic Session</div>
           </div>
           <div>
-            <div className="text-4xl font-serif font-bold text-school-gold mb-2">CISCE</div>
-            <div className="text-sm uppercase tracking-widest opacity-80">Certified Curriculum</div>
+            <div className="text-4xl font-serif font-bold text-school-gold mb-2">ICSE</div>
+            <div className="text-sm uppercase tracking-widest opacity-80">Curriculum Followed</div>
           </div>
           <div>
             <div className="text-3xl md:text-4xl font-serif font-bold text-school-gold mb-2 whitespace-nowrap">Modern Campus</div>
@@ -118,7 +118,7 @@ export const Home: React.FC = () => {
                 <div className="p-6">
                   <span className="text-xs font-bold text-school-gold uppercase tracking-wider">Admissions</span>
                   <h4 className="text-lg font-bold text-gray-800 mt-2 mb-3">Registration Open for 2026-27</h4>
-                  <p className="text-gray-600 text-sm mb-4">We are inviting applications for Nursery to Grade 8 for our inaugural session.</p>
+                  <p className="text-gray-600 text-sm mb-4">We are inviting applications for Pre Nursery to Grade 2 for our inaugural session.</p>
                   <NavLink to="/contact" className="text-sm font-bold text-school-blue hover:underline">Apply Now</NavLink>
                 </div>
             </div>
@@ -139,8 +139,8 @@ export const Home: React.FC = () => {
                 </div>
                 <div className="p-6">
                   <span className="text-xs font-bold text-school-gold uppercase tracking-wider">Academics</span>
-                  <h4 className="text-lg font-bold text-gray-800 mt-2 mb-3">CISCE Curriculum Followed</h4>
-                  <p className="text-gray-600 text-sm mb-4">We are proud to announce our curriculum is aligned with CISCE standards.</p>
+                  <h4 className="text-lg font-bold text-gray-800 mt-2 mb-3">ICSE Curriculum Followed</h4>
+                  <p className="text-gray-600 text-sm mb-4">We are proud to announce our curriculum is aligned with ICSE standards.</p>
                   <NavLink to="/about" className="text-sm font-bold text-school-blue hover:underline">Learn More</NavLink>
                 </div>
             </div>

@@ -34,7 +34,7 @@ export const Layout: React.FC = () => {
             </div>
             <h1 className="text-3xl md:text-4xl font-serif font-bold text-school-blue tracking-wide">CSR GENxt Convent School</h1>
             <p className="text-gray-500 text-sm mt-1 uppercase tracking-widest font-semibold">Explore • Evolve • Excel</p>
-            <p className="text-s text-school-blue font-bold mt-1">CISCE Curriculum</p>
+            <p className="text-s text-school-blue font-bold mt-1">ICSE Curriculum</p>
           </div>
         </div>
 
@@ -100,7 +100,7 @@ const Footer: React.FC = () => {
           <h4 className="text-xl font-serif font-bold text-white mb-4">CSR GENxt Convent School</h4>
           <p className="text-sm leading-relaxed mb-4">
             A new era of holistic education and character building in Fazilka. <br/>
-            CISCE Curriculum Institution.
+            ICSE Curriculum Institution.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
             <a href="#" className="w-8 h-8 bg-gray-700 rounded-full flex items-center justify-center hover:bg-school-gold hover:text-school-blue cursor-pointer transition text-white">

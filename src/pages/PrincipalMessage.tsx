@@ -20,7 +20,7 @@ export const PrincipalMessage: React.FC = () => {
                     Greetings,
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                    Welcome to CSR GENxt Convent School. As we embark on our inaugural session in 2026, I am filled with a sense of responsibility and excitement. Our school stands as a beacon of new-age learning, certified by CISCE, ensuring a standard of education that is recognized globally.
+                    Welcome to CSR GENxt Convent School. As we embark on our inaugural session in 2026, I am filled with a sense of responsibility and excitement. Our school stands as a beacon of new-age learning, ensuring a standard of education that is recognized globally.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
                     My philosophy of education is centered on the child. Every student is unique, with their own set of talents and potential. Our role as educators is to identify and nurture these talents. We aim to create a safe, inclusive, and stimulating environment where students are not afraid to ask questions and make mistakes.
