@@ -23,7 +23,7 @@ export const DirectorMessage: React.FC = () => {
                     It gives me immense pleasure to introduce CSR GENxt Convent School to the community of Fazilka and surrounding areas. Our dream of creating an institution that bridges the gap between traditional values and modern aspirations is finally coming to fruition with our first academic session in 2026.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                    We believe that education is not just about filling a bucket, but lighting a fire. At CSR GENxt, we are committed to igniting that spark of curiosity in every child. Our CISCE curriculum is designed to be rigorous yet flexible, encouraging critical thinking and creativity.
+                    We believe that education is not just about filling a bucket, but lighting a fire. At CSR GENxt, we are committed to igniting that spark of curiosity in every child. Our ICSE curriculum is designed to be rigorous yet flexible, encouraging critical thinking and creativity.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-4">
                     We have invested heavily in infrastructure, from smart classrooms to extensive sports facilities, because we believe that a conducive environment is key to holistic growth.
