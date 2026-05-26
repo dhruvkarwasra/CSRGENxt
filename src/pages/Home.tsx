@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import pamphletImage from '../assets/hiring-pamphlet.jpg';
 
 const highlights = [
   {
@@ -57,7 +58,7 @@ export const Home: React.FC = () => {
             <div className="overflow-hidden w-full h-full flex items-center justify-center bg-gray-50 rounded-lg">
               {/* Ensure the filename matches what you put in the public/ folder */}
               <img
-                src="/hiring-pamphlet.jpg"
+                src={pamphletImage}
                 alt="CSR GENxt Hiring Teachers - Contact Us at info@csrgenxt.in"
                 className="max-w-full max-h-[85vh] object-contain"
               />
