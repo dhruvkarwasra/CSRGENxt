@@ -12,7 +12,7 @@ export const PrincipalMessage: React.FC = () => {
       <div className="container mx-auto px-6 py-16 max-w-4xl">
         <div className="flex flex-col gap-8 items-center text-center">
             <div>
-                <h3 className="text-xl font-bold text-school-blue">Ms. Shreya Singh Saharan</h3>
+                <h3 className="text-xl font-bold text-school-blue">Mrs. Jyoti Yadav</h3>
                 <p className="text-gray-600 text-sm mb-8">Principal, CSR GENxt Convent School</p>
             </div>
             <div className="text-left">
