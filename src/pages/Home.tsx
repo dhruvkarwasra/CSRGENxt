@@ -58,7 +58,7 @@ export const Home: React.FC = () => {
               {/* Ensure the filename matches what you put in the public/ folder */}
               <img
                 src="/hiring-pamphlet.jpg"
-                alt="CSR GENxt Hiring Teachers - Contact Us"
+                alt="CSR GENxt Hiring Teachers - Contact Us at info@csrgenxt.in"
                 className="max-w-full max-h-[85vh] object-contain"
               />
             </div>
