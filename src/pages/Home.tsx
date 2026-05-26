@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
 const highlights = [
@@ -26,8 +26,47 @@ const highlights = [
 ];
 
 export const Home: React.FC = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  useEffect(() => {
+    // sessionStorage clears when the browser tab/window is closed.
+    // This perfectly matches your requirement.
+    const hasSeen = sessionStorage.getItem('hasSeenPamphlet');
+    if (!hasSeen) {
+      setShowModal(true);
+      sessionStorage.setItem('hasSeenPamphlet', 'true');
+    }
+  }, []);
+
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col relative">
+      
+      {/* --- HIRING PAMPHLET MODAL --- */}
+      {showModal && (
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/75 backdrop-blur-sm p-4 md:p-8">
+          <div className="relative max-w-3xl w-full max-h-[90vh] bg-white rounded-xl p-2 shadow-2xl flex flex-col animate-fade-in-up">
+            {/* Close Button */}
+            <button
+              onClick={() => setShowModal(false)}
+              className="absolute -top-3 -right-3 md:-top-5 md:-right-5 bg-red-500 hover:bg-red-600 text-white rounded-full w-10 h-10 md:w-12 md:h-12 flex items-center justify-center text-2xl md:text-3xl font-bold shadow-lg transition transform hover:scale-110 z-10"
+            >
+              &times;
+            </button>
+            
+            {/* Pamphlet Image */}
+            <div className="overflow-hidden w-full h-full flex items-center justify-center bg-gray-50 rounded-lg">
+              {/* Ensure the filename matches what you put in the public/ folder */}
+              <img
+                src="/hiring-pamphlet.jpg"
+                alt="CSR GENxt Hiring Teachers - Contact Us"
+                className="max-w-full max-h-[85vh] object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      )}
+      {/* --- END MODAL --- */}
+
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center text-white overflow-hidden bg-school-blue">
         <div className="absolute inset-0 opacity-10">
@@ -138,10 +177,10 @@ export const Home: React.FC = () => {
                     <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
                 </div>
                 <div className="p-6">
-                  <span className="text-xs font-bold text-school-gold uppercase tracking-wider">Academics</span>
-                  <h4 className="text-lg font-bold text-gray-800 mt-2 mb-3">ICSE Curriculum Followed</h4>
-                  <p className="text-gray-600 text-sm mb-4">We are proud to announce our curriculum is aligned with ICSE standards.</p>
-                  <NavLink to="/about" className="text-sm font-bold text-school-blue hover:underline">Learn More</NavLink>
+                  <span className="text-xs font-bold text-school-gold uppercase tracking-wider">Faculty</span>
+                  <h4 className="text-lg font-bold text-gray-800 mt-2 mb-3">We Are Hiring!</h4>
+                  <p className="text-gray-600 text-sm mb-4">Come, be a part of our journey in shaping young minds.</p>
+                  <NavLink to="/contact" className="text-sm font-bold text-school-blue hover:underline">Apply Now</NavLink>
                 </div>
             </div>
           </div>
