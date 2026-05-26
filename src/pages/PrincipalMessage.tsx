@@ -35,7 +35,7 @@ export const PrincipalMessage: React.FC = () => {
                     Sincerely,
                 </p>
                 <p className="font-serif text-gray-800">
-                    Ms. Shreya Singh Saharan
+                    Mrs. Jyoti Yadav
                 </p>
             </div>
         </div>
